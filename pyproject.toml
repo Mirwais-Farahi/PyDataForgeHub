@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydataforgehub"
+version = "0.1.0"
+description = "PyDataForgeHub is a comprehensive data processing solution designed to streamline data quality checks, analysis, and visualization. The project focuses on automating data validation processes, identifying and addressing data quality issues, and providing robust data analysis tools. By integrating advanced visualization techniques, PyDataForgeHub ensures that data insights are presented in a clear and actionable manner, enabling users to make informed decisions. The solution supports a wide range of data sources and aims to simplify the data management workflow, improving both efficiency and accuracy in data-driven projects."
+readme = "README.rst"
+authors = [
+  {name = "Mirwais Farahi", email = "waisfarahi@gmail.com"}
+]
+maintainers = [
+  {name = "Mirwais Farahi", email = "waisfarahi@gmail.com"}
+]
+classifiers = [
+
+]
+license = {text = "MIT license"}
+dependencies = [
+  "typer"
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/Mirwais-Farahi/pydataforgehub/issues"
+changelog = "https://github.com/Mirwais-Farahi/pydataforgehub/blob/master/changelog.md"
+homepage = "https://github.com/Mirwais-Farahi/pydataforgehub"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"
+
