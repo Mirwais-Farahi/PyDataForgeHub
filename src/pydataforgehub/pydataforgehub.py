@@ -15,7 +15,6 @@ def main():
         'salary': [50000, 62000, 48000, 58000, None, 61000, 70000],
         'department': ['HR', 'Engineering', 'HR', 'Engineering', 'HR', 'Finance', 'HR'],
         'date_collected': ['2023-01-01', '2023-01-02', '2023-01-03', '2023-01-04', '2023-01-05', '2023-01-06', '2023-01-07'],
-        'status': ['completed', 'pending', 'completed', 'completed', 'pending', 'completed', 'completed'],
         'enumerator': ['Alice', 'Bob', 'Alice', 'Charlie', 'Alice', 'Charlie', 'Bob']
     }
 
