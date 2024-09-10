@@ -2,10 +2,13 @@
 
 import pandas as pd
 
-class DataAnalyzer:
-    def __init__(self, df: pd.DataFrame):
-        self.df = df
+def correlation_between(df: pd.DataFrame, column1: str, column2: str):
+    """
+    Calculate the correlation between two columns.
     
-    def correlation_between(self, column1: str, column2: str):
-        """Calculate the correlation between two columns."""
-        return self.df[column1].corr(self.df[column2])
+    :param df: A pandas DataFrame.
+    :param column1: The first column for correlation.
+    :param column2: The second column for correlation.
+    :return: A float representing the correlation between two columns.
+    """
+    return df[column1].corr(df[column2])
