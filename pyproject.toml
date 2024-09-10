@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pydataforgehub"
-version = "0.1.0"
+version = "0.1.1"
 description = "PyDataForgeHub automates data quality checks, analysis, and visualization. It simplifies data management workflows and improves accuracy in data-driven projects."
 readme = "README.rst"
 authors = [
